@@ -1,3 +1,6 @@
+
+
+
 <html lang="en">
 
 <head>
@@ -22,10 +25,10 @@
                   </div>
                   <div class="contenedor__login-register">
                         <!-- * formulario login -->
-                        <form action="" class="formulario__login">
+                        <form action="../php/login_user.php" method="post" class="formulario__login">
                               <h2>Iniciar sesion</h2>
-                              <input type="text" placeholder="Numero de cedula">
-                              <input type="password" name="" id="" placeholder="Contraseña">
+                              <input type="text" required name="numUser" placeholder="Numero de cedula">
+                              <input type="password"  id="" required name="loginPassword" placeholder="Contraseña">
                               <button>Ingresar</button>
                         </form>
                         <!-- * formulario registro -->
