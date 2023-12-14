@@ -18,7 +18,7 @@
         </div>
         <nav>
            <ul class="nav-links">
-                <li><a href="../../../index.html">inicio</a></li>
+                <li><a href="../../../pages/user_welcome.php">inicio</a></li>
                 <li><a href="#">noticias</a></li>
                 <li><a href="#">galeria</a></li>
                 <li><a href="#">contactos</a></li>

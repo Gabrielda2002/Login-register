@@ -13,7 +13,7 @@ if (!isset($_SESSION['user_logged_in']) || $_SESSION['user_logged_in'] !== true)
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Incio</title>
+    <title>Inicio</title>
     <link rel="stylesheet" href="../assets/css/style_welcome_user.css">
 
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
@@ -25,20 +25,50 @@ if (!isset($_SESSION['user_logged_in']) || $_SESSION['user_logged_in'] !== true)
         </div>
         <nav>
            <ul class="nav-links">
-                <li><a href="../index.html">inicio</a></li>
+                <!-- <li><a href="../index.html">inicio</a></li> -->
                 <li><a href="#">noticias</a></li>
                 <li><a href="#">galeria</a></li>
                 <li><a href="#">contactos</a></li>
                 <li><a href="#">About</a></li>
            </ul>            
         </nav>
-        <a class="icon" href="pages/login-register-administrativos.php"><img src="../img/icon.png" alt="" width="50"></a>
+        <!-- <a class="icon" href="pages/login-register-administrativos.php"><img src="../img/icon.png" alt="" width="50"></a> -->
         <a class="lupa" href="#"><img src="../img/lupa.png" alt="" width="50"></a>
         <a class="ajustes" href="#"><img src="../img/ajustes.png" alt="" width="50"></a>
+        <div class="btn-contente">  
+            <form action="../php/logout.php" method="post">
+                <button class="logout" type="submit">Cerrar Sesión</button>
+            </form> 
+            <button class="dropdown-btn">Registrar</button>
+            <div class="dropdown-content">
+                <a href="registers/estudiantes/register_estudiante.php">Registro estudiantes</a>
+                <a href="registers/docentes/register-docentes.php">Registro Docentes</a>
+            </div>
+        </div>
     </header>
-    <form action="../php/logout.php" method="post">
-        <button type="submit">Cerrar Sesión</button>
-    </form>
+
+    <div class="tittle-content">
+        <h4>Sedes</h4>
+    </div>
+    <div class="body-content">
+        <div class="content-img">
+        <a href="">
+            <img src="../img/pescadero.PNG" alt="">
+        </a>
+        </div>
+        <div class="content-img">
+        <a href="">
+            <img src="../img/zapateria.PNG" alt="">
+        </a>
+        </div>
+        <div class="content-img">
+            <a href="">
+                <img src="../img/sen.jpg" alt="">
+            </a>
+        </div>
+    </div>
+
+    <!-- pie de pagina -->
     <footer class="pie-pagina">
         <div class="grupo-1">
             <div class="box">
@@ -70,6 +100,6 @@ if (!isset($_SESSION['user_logged_in']) || $_SESSION['user_logged_in'] !== true)
         </div>
     </footer>
     <script src="/assets/js/inactivity_timeout.js"></script>
-
+    <script src="../assets/js/butom-drop.js"></script>
 </body>
 </html>

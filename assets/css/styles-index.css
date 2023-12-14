@@ -197,3 +197,32 @@
         padding: 35px 0px;
     }
 }
+
+/* estilos mision vision */
+.content-vision_mision {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+
+}
+.content-vision_mision{
+    width: 750px;
+    margin: 0 auto;
+}
+
+.content-vision,
+.content-mision {
+    width: 48%; /* Para dejar un pequeño espacio entre los textos */
+}
+
+.text_tittle {
+    font-size: 30px;
+    font-weight: bold;
+    color: #1a237e;
+    margin-bottom: 10px;
+}
+
+.text {
+    font-size: 15px;
+    color: #333;
+}

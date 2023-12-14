@@ -87,7 +87,8 @@ main{
     max-width: 800px;
     margin: auto;
     position: relative;
-    margin-top: 240px;
+    margin-top: 300px;
+    /* border: 1px solid black; */
 }
 .caja__trasera{
     width: 100%;
