@@ -1,17 +1,33 @@
-
-
-
 <html lang="en">
 
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>login</title>
-      <link rel="stylesheet" href="css/styles.css">
+      <link rel="stylesheet" href="../assets/css/styles-register-login-directivos.css">
+      <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
       <main>
+                <header class="header">
+        <div class="logo">
+            <img src="../img/magen.png" alt="">
+        </div>
+        <nav>
+           <ul class="nav-links">
+                <li><a href="../index.html">inicio</a></li>
+                <li><a href="#">noticias</a></li>
+                <li><a href="#">galeria</a></li>
+                <li><a href="#">contactos</a></li>
+                <li><a href="#">About</a></li>
+           </ul>            
+        </nav>
+        <a class="icon" href="pages/login-register-administrativos.php"><img src="../img/icon.png" alt="" width="50"></a>
+        <a class="lupa" href="#"><img src="../img/lupa.png" alt="" width="50"></a>
+        <a class="ajustes" href="#"><img src="../img/ajustes.png" alt="" width="50"></a>
+    </header>
             <div class="contenedor__todo">
                   <div class="caja__trasera">
                         <div class="caja__trasera-login">
@@ -90,12 +106,42 @@
                   </form>
             </div>
             </div>
+            <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="../img/magen.png" alt="Logo">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p><a href="#">Chat en linea</a></p>
+                <p><a href="#">Correo notificaciones: GEJED@gmail.com</a></p>
+                <p><a href="#">Política de privacidad</a></p>
+                <p><a href="#">Ayuda?</a></p>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2023 <b>GEJED</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
       </main>
       <!-- script validacion contraseña -->
       <script src="../assets/js/password_validation.js"></script>
       <script src="../assets/js/script.js"></script>
       <!-- <script src="../assets/js/validation_save_data.js"></script> -->
-      <script src="../assets/js/validation_phone.js"></script>
+      <script src=".././assets/js/validation_phone.js"></script>
 </body>
 
 </html>

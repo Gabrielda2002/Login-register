@@ -1,8 +1,9 @@
 function validatePassword(event) {
-    // Obtener dato contraseña
+    // obtener el dato de la contraseña
     var password = document.getElementById('password').value;
 
-    // Condiciones validación
+    // Condiciones para la validacion
+    
     var hasUpperCase = /[A-Z]/.test(password);
     var hasSpecialChar = /[!@#$%^&*(),.?":{}|<>]/.test(password);
 
@@ -11,7 +12,7 @@ function validatePassword(event) {
 
     if (!hasSpecialChar || !hasUpperCase) {
         validationMessage.innerHTML = "La contraseña debe tener al menos una mayúscula o un carácter especial.";
-        event.preventDefault(); // Evitar el envío del formulario si la validación falla
+        event.preventDefault(); // evita el envio de el formulario si la contraseña cumple con las condiciones
         return false;
     } else {
         validationMessage.innerHTML = ""; // Limpiar mensaje si la contraseña es válida
